@@ -1,0 +1,28 @@
+.Nav {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Nav-left>.Nav-item {
+  padding: 15px;
+  margin: 1px;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  border-width: 1px;
+  border-style:solid;
+  border-color: #ddd;
+}
+
+.Nav-left>.Nav-item.active {
+  border-bottom: 1px solid #fff;
+}
+
+.Nav-right {
+  padding: 0 15px; 
+}
+
+.Nav-right>.Nav-brand {
+  font-weight: 600;
+}

@@ -1,0 +1,22 @@
+.About-head {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+section.About-title {
+  font-weight: 600;
+  min-height: 50px;
+  line-height: 50px;
+}
+
+.About-cont {
+  width: calc(100% - 40px);
+  height: 250px;
+  padding: 20px;
+  display: inline-flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+

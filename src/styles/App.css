@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  height: 45px;
+  width: 100%;
+  line-height: 45px;
+  background-color: #eaeaea;
+  padding-top: 5px;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  z-index: 100;
+}
+
+.App-footer { 
+  background: #eaeaea;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  border-top: 1px solid #ddd;
+}
+
+.App-main {
+  min-height: calc(100vh - 31px);
+}
+

@@ -1,0 +1,23 @@
+.Home-intro {
+  margin: auto;
+  padding-top: calc(35vh - 81px);
+}
+
+.Home-image {
+  height: auto;
+  width: 200px;
+  margin: auto;
+}
+
+.Home-image>img {
+  height: auto;
+  width: 100%;
+  border: 5px solid #222;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 50%;
+}
+
+.Info-name>span {
+  font-weight: 600;
+}

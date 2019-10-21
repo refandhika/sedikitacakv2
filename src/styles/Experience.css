@@ -1,0 +1,96 @@
+.Experience-head {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.Experience-cont {
+  width: calc(100% - 40px);
+  height: 250px;
+  padding: 20px;
+  display: inline-flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.Experience-det {
+  width: 100%;
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.Experience-det>div {
+  width: 50%;
+}
+
+.Experience-info * {
+  text-align: left;
+}
+
+.Experience-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.Experience-title>a:hover {
+  text-decoration: underline;
+}
+
+.Experience-desc {
+  margin-bottom: 10px;
+}
+
+.Experience-pos {
+  width: 100%;
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.Experience-pos>div {
+  width: 50%;
+  font-weight: 600;
+}
+
+.Experience-tag-cont {
+  width: 100%;
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.Experience-tag-cont>div {
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+section .Experience-tag-cont>div {
+  background-color: #222;
+  color: #fff;
+}
+
+section .Experience-tag-cont>div:hover {
+  background-color: #666;
+}
+
+section.invert .Experience-tag-cont>div {
+  background-color: #fff;
+  color: #222;
+}
+
+section.invert .Experience-tag-cont>div:hover {
+  background-color: #bbb;
+}
+
+.Experience-left>img,
+.Experience-right>img {
+  height: 200px;
+  width: 200px;
+}

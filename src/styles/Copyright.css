@@ -1,0 +1,10 @@
+.Copyright {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Copyright>* {
+  padding: 0 15px;
+}

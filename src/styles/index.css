@@ -1,0 +1,34 @@
+* {
+  color: #222;
+}
+
+a { 
+  text-decoration: none;
+}
+
+html {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+  min-height: 250px;
+  position: relative;
+}
+
+section.invert {
+  background-color: #333;
+}
+
+section.invert * { 
+  color: #fff;
+}
+
