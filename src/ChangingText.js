@@ -2,10 +2,6 @@ import React from 'react';
 import Typed from 'typed.js';
 
 class ChangingText extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     const options = {
       stringsElement: '#TextCollection',

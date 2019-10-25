@@ -27,7 +27,7 @@ class NavLeft extends React.Component {
     const currPage = this.props.currPage;
     const menuList = this.props.menus.map((menu) =>
       <Link key={menu.id}
-        className={currPage == menu.id ? "Nav-item active" : "Nav-item"}
+        className={currPage === menu.id ? "Nav-item active" : "Nav-item"}
         to={menu.link}
 	onClick={() => this.onClickHandler(menu.id)}>
         {menu.title}

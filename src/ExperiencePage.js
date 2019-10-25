@@ -92,10 +92,6 @@ const expData = [
 ]
 
 class ExperiencePage extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     const options = {
       stringsElement: '#ExpCollection',
@@ -133,10 +129,22 @@ class ExperiencePage extends React.Component {
 	    <div className="Experience-cont">
 	      <div className="Experience-det">
 	        <div className="Experience-left">
-	          {data.expId % 2 ? <ExpPageInfo data={data} /> : <img src={data.img} />}
+	          {
+		    data.expId % 2 ?
+		      <img src={data.img} 
+			alt="" />
+		      :
+		      <ExpPageInfo data={data} />
+		  }
 	        </div>
-	        <div className="Experience-right">
-		  {data.expId % 2 ? <img src={data.img} /> : <ExpPageInfo data={data} />}
+	        <div className="Experience-right"> 
+		  {
+		    data.expId % 2 ?
+		      <ExpPageInfo data={data} />
+		      :
+		      <img src={data.img} 
+			alt="" />
+		  }
 	        </div>
 	      </div>
 	      <div className="Experience-stat">{data.stat}</div>

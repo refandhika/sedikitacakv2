@@ -11,7 +11,8 @@ function HomePage() {
       <div className="Content">
 	<div className="Home-intro">
 	  <div className="Home-image">
-	    <img src={logo}/>
+	    <img src={logo}
+	      alt="" />
 	  </div>
 	  <div className="Home-info">
 	    <div className="Info-name">Hi! I'm <span>Refa Andhika</span></div>

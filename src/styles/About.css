@@ -16,7 +16,70 @@ section.About-title {
   height: 250px;
   padding: 20px;
   display: inline-flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
+.About-cont>div {
+  width: 50%;
+}
+
+.About-info * {
+  text-align: left;
+}
+
+.About-name {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.About-name>a:hover {
+  text-decoration: underline;
+}
+
+.About-desc {
+  margin-bottom: 10px;
+}
+
+.About-cat {
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: .5s;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  width: fit-content;
+}
+
+.About-cat:hover {
+  background-color: #888888;
+}
+
+.About-img {
+  border-radius: 40px;
+}
+
+.ATWSection {
+  font-weight: 600;
+}
+
+.FAButton {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #222222;
+  background-color: #222222;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: .5s;
+  font-size: 25px;
+}
+
+.FAButton * {
+  color: #ffffff;
+}
+
+.FAButton:hover {
+  background-color: #444444;
+}

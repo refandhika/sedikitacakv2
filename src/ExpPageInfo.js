@@ -4,7 +4,9 @@ function ExpPageInfo(props) {
   return (
     <div className="Experience-info">
       <div className="Experience-title">
-	<a href={props.data.link} target="_blank">
+	<a href={props.data.link}
+	  target="_blank"
+	  rel="noopener noreferrer">
 	  {props.data.title}
 	</a>
       </div>
