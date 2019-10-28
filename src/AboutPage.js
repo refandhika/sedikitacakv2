@@ -6,6 +6,7 @@ import marImg from './images/marvel.png';
 import rmImg from './images/rm.png';
 import opImg from './images/onepiece.png';
 import tarImg from './images/tar.png';
+import bmImg from './images/blackmirror.png';
 
 import './styles/About.css';
 
@@ -68,7 +69,7 @@ const stuffs = [
     title: "Black Mirror",
     link: "https://www.netflix.com/id-en/title/70264888",
     desc: "A series of different stories from different people which had problem with currently unexisting technology. And story telling of what if a technology can affect society if ever founded.",
-    img: "",
+    img: bmImg,
     bgColor: "#222222",
     fontColor: "#ffffff",
     category: "TV Series"
@@ -82,22 +83,22 @@ const aroundTheWeb = [
     socials: [
       {
         sosId: 1,
-	link: "",
+	link: "https://github.com/refandhika",
 	icon: "github"
       },
       {
 	sosId: 2,
-	link: "",
+	link: "https://www.facebook.com/refa.andhika",
 	icon: "facebook-f"
       },
       {
         sosId: 3,
-	link: "",
+	link: "https://www.linkedin.com/in/refa-andhika-aa203a94/",
 	icon: "linkedin-in"
       },
       {
 	sosId: 4,
-	link: "",
+	link: "https://www.instagram.com/refa.andhika/",
 	icon: "instagram"
       }
     ]
@@ -108,7 +109,7 @@ const aroundTheWeb = [
     socials: [
       {
 	sosId: 1,
-	link: "",
+	link: "https://steamcommunity.com/id/stave-id/",
 	icon: "steam-symbol"
       },
       {
@@ -124,17 +125,17 @@ const aroundTheWeb = [
     socials: [
       {
         sosId: 1,
-	link: "",
+	link: "https://twitter.com/stave_id",
 	icon: "twitter"
       },
       {
 	sosId: 2,
-	link: "", 
+	link: "https://soundcloud.com/st-ave", 
 	icon: "soundcloud"
       },
       {
 	sosId: 3,
-	link: "",
+	link: "https://open.spotify.com/artist/5jyQIfUfnxYsyXuDrCTidU",
 	icon: "spotify"
       }
     ]
