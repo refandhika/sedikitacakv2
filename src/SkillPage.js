@@ -197,6 +197,16 @@ const skillData = [
 ]
 
 class SkillPage extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      sectShow: false
+    }
+
+    this.toggleHidden = this.toggleHidden.bind(this);
+  }
+
   componentDidMount() {
     const options = {
       stringsElement: '#SkiCollection',
@@ -214,11 +224,15 @@ class SkillPage extends React.Component {
     this.typed.destroy();
   }
 
-  showHidden() {
-    console.log('husky');
+  toggleHidden() {
+    this.setState({
+      sectShow: !this.state.sectShow
+    });
   }
 
   render() {
+    const sectShow = this.state.sectShow;
+
     return (
       <div className="SkillPage">
         <section className="Skill-sect">
@@ -238,13 +252,20 @@ class SkillPage extends React.Component {
 	  if(data.id % 2){
 	    cn = cn + " invert";
 	  }
-	  if(data.hidden){
-	    cn = cn + " hidden";
+
+	  let sectStyle = {
+	    display: "none",
+	  };
+	  if(sectShow || !data.hidden){
+	    sectStyle = {
+	      display: "block",
+	    }
 	  }
 
 	  return (
 	    <section key={data.id}
-	      className={cn}>
+	      className={cn}
+	      style={sectStyle}>
 	      <div className="Skill-cont">
 		<div className="Skill-title">
 		  {data.title}
@@ -255,13 +276,20 @@ class SkillPage extends React.Component {
 	        <div className="Skill-det">
 		  { data.skills.map((skill) => {
 		    let cn = "Skill-item";
-		    if(skill.hidden){
-		      cn = cn + " hidden";
+		
+		    let itemStyle = {
+		      display: "none"
 		    }
-		    
+		    if(sectShow || !skill.hidden){
+	    	      itemStyle = {
+	      		display: "inline-flex"
+	    	      }
+	  	    }
+    
 		    return(
 		      <div key={skill.id}
-		        className={cn}>
+		        className={cn}
+			style={itemStyle}>
 		        <div className="Skill-item-img">
 			  <img src={skill.img} alt="" />
 		        </div>
@@ -287,10 +315,15 @@ class SkillPage extends React.Component {
 	)}
 	<section className="Skill-more invert">
 	  <p>
-	    I got more skill in my sleeve. But i currently not using them professionally.
+	    {
+	      !sectShow ? 
+	      "I got more skill in my sleeve. But i currently not using them professionally."
+	      :
+	      "Well you see more of skill i used outside my professional works. There is some more, but i decide it was old skill or some stuff i've done but never used in a long time."
+	    }
 	  </p>
-	  <button onClick={this.showHidden}>
-	    Just show me!
+	  <button onClick={this.toggleHidden}>
+	    { !sectShow ? "Just show me!" : "OK, now hide it." }
 	  </button>
 	</section>
       </div>
