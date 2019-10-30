@@ -15,7 +15,7 @@
   -ms-overflow-style: -ms-autohiding-scrollbar; 
 }
 
-.Nav-left:: -webkit-scrollbar {
+.Nav-left::-webkit-scrollbar {
   display: none;
 }
 
