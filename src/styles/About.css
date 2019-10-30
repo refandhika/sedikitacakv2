@@ -13,7 +13,7 @@ section.About-title {
 
 .About-cont {
   width: calc(100% - 40px);
-  height: 250px;
+  min-height: 250px;
   padding: 20px;
   display: inline-flex;
   flex-flow: row wrap;
@@ -22,6 +22,10 @@ section.About-title {
 
 .About-cont>div {
   width: 50%;
+}
+
+.About-info {
+  padding: 5px;
 }
 
 .About-info * {
@@ -57,6 +61,8 @@ section.About-title {
 
 .About-img {
   border-radius: 40px;
+  width: calc(100% - 10px);
+  padding: 5px;
 }
 
 .About-atw-cont {
@@ -87,4 +93,22 @@ section.About-title {
 
 .FAButton:hover {
   background-color: #444444;
+}
+
+@media only screen and (max-width: 600px) {
+  .About-cont>div {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .About-cont {
+    width: 1000px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .About-cont {
+    width: 1400px;
+  }
 }

@@ -1,8 +1,22 @@
 .Nav {
   display: inline-flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 100%;
+}
+
+.Nav-left {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  flex: 1;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; 
+}
+
+.Nav-left:: -webkit-scrollbar {
+  display: none;
 }
 
 .Nav-left>.Nav-item {
@@ -13,6 +27,7 @@
   border-width: 1px;
   border-style:solid;
   border-color: #ddd;
+  margin-bottom: 0;
 }
 
 .Nav-left>.Nav-item.active {
@@ -20,9 +35,20 @@
 }
 
 .Nav-right {
-  padding: 0 15px; 
+  padding: 0 15px;
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
 }
 
 .Nav-right>.Nav-brand {
   font-weight: 600;
+  line-height: 45px;
 }
+
+@media only screen and (max-width: 600px) {
+  .Nav-right>.Nav-brand {
+    padding: 4px 0;
+  }
+}
+

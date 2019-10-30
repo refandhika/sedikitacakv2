@@ -3,7 +3,7 @@ import React from 'react';
 function AboutSectInfo(props) {
 	console.log(props);
   return(
-    <section className="About-info">
+    <div className="About-info">
       <div className="About-name">
 	<a href={props.data.link}
 	  target="_blank"
@@ -23,7 +23,7 @@ function AboutSectInfo(props) {
 	}}>
 	{props.data.category}
       </div>
-    </section>
+    </div>
   );
 }
 
