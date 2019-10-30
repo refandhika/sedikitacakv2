@@ -13,19 +13,26 @@ section.About-title {
 
 .About-cont {
   width: calc(100% - 40px);
-  min-height: 250px;
   padding: 20px;
   display: inline-flex;
   flex-flow: row wrap;
   justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .About-cont>div {
   width: 50%;
+  position: relative;
 }
 
 .About-info {
   padding: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .About-info * {
@@ -61,7 +68,8 @@ section.About-title {
 
 .About-img {
   border-radius: 40px;
-  width: calc(100% - 10px);
+  width: auto;
+  max-height: 250px;
   padding: 5px;
 }
 
